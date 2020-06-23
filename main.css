@@ -12,7 +12,36 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* IMAGEM DO PERFL */
+
+.profile {
+    z-index: 10;
+    position: absolute;
+    opacity: 0;
+    border-radius: 50%;
+    width: 120px;
+    animation-name: profile;
+    animation-fill-mode: forwards;
+    animation-delay: 1000ms;
+    animation-duration: 800ms;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid #fff;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.123); 
+}
+
+@keyframes profile {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .principal {
+    z-index: 5;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,6 +59,7 @@ body {
     animation-delay: 400ms;
     animation-duration: 800ms;
     opacity: 0;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.123); 
 }
 
 @keyframes show {
@@ -44,36 +74,29 @@ body {
 }
 
 .principal h1 {
-    margin: 30px 25px;
+    text-align: center;
+    width: 100%;
+    margin-top: 25%;
     font-weight: lighter;
 }
 
-.principal form input {
-    transition: 500ms;
-}
-
-.principal form input[type = text], .principal form input[type = password ] {
-    position: relative;
-    margin-left: 25px; 
-    padding: 15px;
-    width: 70%;
-    background-color: rgb(231, 231, 231);
+button {
+    display: inline-block;
+    width: 90%;
+    margin-left: 5%;
+    padding: 8px;
+    color: white;
     border-radius: 5px;
 }
 
-.principal form input[type = checkbox] {
-    position: relative;
-    margin-left: 25px;
-    margin-right: 2px;
-    background-color: rgb(231, 231, 231);
-    color: rgb(231, 231, 231);;
-    border-radius: 5px;
-    cursor: pointer;
+.twitter {
+    background-color: #00acee;
+    margin-top: 10%;
 }
 
-.principal form input:hover {
-    background-color: rgb(211, 211, 211);
-    transition: 500ms;
+.xbox {
+    background-color: #0e7a0d;
+    margin-top: 2%;
 }
 
 .principal form label {
