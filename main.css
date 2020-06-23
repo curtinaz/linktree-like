@@ -33,6 +33,10 @@ body {
     transition: border-color 500ms, box-shadow 500ms;
 }
 
+body a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .profile img {
     transition: 500ms;
 }
